@@ -28,6 +28,22 @@ def convertir_en_romano(numero):
     if not isinstance(numero, int) or numero < 0 or numero > 3999:
         return "El número introducido no es válido (debe ser positivo y menor de 4000)"
 
+    #continuamos con la conversión
+    simbolos = {
+        "I": 1,
+        "V": 5,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000
+    }
+
+    # Descomponer "numero" en unidades, decenas, centenas y unidades de millar
+    # opción 1: división entera + módulo de cascada
+    # opción 2: convertir en cadena y en función de la longitud y la posición obtener u, d, c y um 
+
+
 print(convertir_en_romano("3a3"))
 print(convertir_en_romano(-3))
 print(convertir_en_romano(3333))
