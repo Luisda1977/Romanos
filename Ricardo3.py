@@ -1,0 +1,2 @@
+input("Hola, mundo")
+print 

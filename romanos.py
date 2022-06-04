@@ -25,7 +25,7 @@ def convertir_en_romano(numero):
     #except ValueError:
         #raise  ValueError (f"{numero} no es número válido")
 
-    if not isinstance(numero, int) or numero < 0 or numero > 3999:
+    if not isinstance(numero, int) or numero < 0 or numero > 4000:
         return "El número introducido no es válido (debe ser positivo y menor de 4000)"
 
     #continuamos con la conversión
@@ -43,9 +43,17 @@ def convertir_en_romano(numero):
     # opción 1: división entera + módulo de cascada
     # opción 2: convertir en cadena y en función de la longitud y la posición obtener u, d, c y um 
 
+    divisores = [1000, 100, 10, 1]
 
-print(convertir_en_romano("3a3"))
-print(convertir_en_romano(-3))
-print(convertir_en_romano(3333))
+    valor = 0
+    for divisor in divisores:
+        cociente = numero // divisor
+        resto = numero % divisor
+        print(divisor, cociente)
+        numero = resto
+
+#print(convertir_en_romano("3a3"))
+#print(convertir_en_romano(-3))
+print(convertir_en_romano(1298))
 # convertir_en_romano(-3)
 # convertir_en_romano("a")
