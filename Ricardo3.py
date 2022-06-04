@@ -1,2 +1,0 @@
-input("Hola, mundo")
-print 

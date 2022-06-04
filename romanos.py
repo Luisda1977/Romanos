@@ -15,7 +15,7 @@ def convertir_en_romano(numero):
         - (X) isnumeric()
 
     PASOS:
-        1. Validando la entrada
+        1. Validando la entrada 
         2a. Si es válido: lo convierto
         2b. Si no es válido: muestro un error
     """
